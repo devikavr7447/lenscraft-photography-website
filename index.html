@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
+    <title>LensCraft</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--tailwind CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--fontawesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-neutral-950">
+
+    <!--navigation bar section-->
+    <header class="bg-neutral-950">
+        <nav class="relative flex items-center justify-between px-8 py-5">
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+            <a href="index.html" class="flex items-center gap-3 text-3xl"><img src="./media/logo.png" height="50"
+                    width="50" alt="LensCraft Logo"><span class="text-white">LensCraft</span></a>
+            <label for="menu-toggle" class="ml-auto cursor-pointer text-2xl text-white lg:hidden peer-checked:hidden"><i
+                    class="fa-solid fa-bars"></i></label>
+            <label for="menu-toggle" class="hidden cursor-pointer text-2xl text-white lg:hidden peer-checked:block"><i
+                    class="fa-solid fa-xmark"></i></label>
+            <div id="navLinks"
+                class="hidden peer-checked:block absolute left-0 top-full z-50 w-full bg-neutral-950 py-5 text-center uppercase lg:static lg:block lg:w-auto lg:bg-transparent lg:py-0 ">
+                <a class="block gap-5 py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="index.html">Home</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="about.html">About</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="portfolio.html">Portfolio</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="services.html">Services</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0"
+                    href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- hero section-->
+    <section class=" bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('./media/hero.png'); height: 750px;">
+        <div class="text-white px-5">
+            <p class="text-amber-400 uppercase text-sm">Professional Photography</p>
+            <h1 class="mt-4 text-5xl font-bold">Every frame tells a<span class="text-amber-400">story</span>.</h1>
+            <p class="mt-5 text-gray-200">Weddings, portraits, travel and commercial photography — timeless images crafted with passion, light and a little bit of magic.</p>
+            <div class="mt-8">
+                <a href="portfolio.html" class="bg-amber-500 text-black px-7 py-3 rounded-full">View Portfolio</a>
+                <a href="contact.html" class="bg-white text-black px-7 py-3 rounded-full ml-3">Book a Session
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--overall about-->
+    <section class="bg-neutral-900 border-y border-white/10">
+        <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <p class="font-display text-4xl text-amber-400">12+</p>
+                <p class="text-sm text-neutral-400">Years Experience</p>
+            </div>
+            <div>
+                <p class="font-display text-4xl text-amber-400">850+</p>
+                <p class="text-sm text-neutral-400">Events Shot</p>
+            </div>
+            <div>
+                <p class="font-display text-4xl text-amber-400">40k+</p>
+                <p class="text-sm text-neutral-400">Photos Delivered</p>
+            </div>
+            <div>
+                <p class="font-display text-4xl text-amber-400">98%</p>
+                <p class="text-sm text-neutral-400">Happy Clients</p>
+            </div>
+        </div>
+    </section>
+
+    <!--featured categories section-->
+    <section class="max-w-7xl mx-auto px-4 py-20">
+        <div class="text-center">
+            <p class="text-amber-400 uppercase text-sm">Explore Our Photography</p>
+            <h2 class="text-3xl sm:text-4xl text-white font-bold mt-2">Our Featured Photography Categories</h2>
+            <p class="text-gray-400 mt-4">From beautiful weddings to breathtaking landscapes,we capture every moment through our lens.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12" id="cats">
+            <div class="text-center">
+                <img src="./media/wedding.jpg" alt="Wedding Photography" class="w-full h-100 object-cover rounded-lg">
+                <h3 class="text-white text-xl font-semibold mt-4">Wedding Photography</h3>
+            </div>
+            <div class="text-center">
+                <img src="./media/potrait.jpg" alt="Portrait Photography" class="w-full h-100 object-cover rounded-lg">
+                <h3 class="text-white text-xl font-semibold mt-4">Portrait Photography</h3>
+            </div>
+            <div class="text-center">
+                <img src="./media/traveli.jpg" alt="Travel Photography" class="w-full h-100 object-cover rounded-lg">
+                <h3 class="text-white text-xl font-semibold mt-4">Travel Photography</h3>
+            </div>
+            <div class="text-center">
+                <img src="./media/product.jpg" alt="Product Photography" class="w-full h-100 object-cover rounded-lg">
+                <h3 class="text-white text-xl font-semibold mt-4">Product Photography</h3>
+            </div>
+            <div class="text-center">
+                <img src="./media/landscap.jpg" alt="Landscape Photography"
+                    class="w-full h-100 object-cover rounded-lg">
+                <h3 class="text-white text-xl font-semibold mt-4">Landscape Photography</h3>
+            </div>
+            <div class="text-center">
+                <img src="./media/fashion.jpg" alt="Fashion Photography" class="w-full h-100 object-cover rounded-lg">
+                <h3 class="text-white text-xl font-semibold mt-4">Fashion Photography</h3>
+            </div>
+            <div class="text-center">
+                <img src="./media/streett.jpg" alt="Street Photography" class="w-full h-100 object-cover rounded-lg">
+                <h3 class="text-white text-xl font-semibold mt-4">Street Photography</h3>
+            </div>
+            <div class="text-center">
+                <img src="./media/wildlife.jpg" alt="Wildlife Photography" class="w-full h-100 object-cover rounded-lg">
+                <h3 class="text-white text-xl font-semibold mt-4">Wildlife Photography</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--gallery section-->
+    <section class="bg-black py-20">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="flex flex-col gap-3">
+                        <img src="./media/homepic1.jpg" class="w-full h-64 object-cover rounded-xl">
+                        <img src="./media/homepic3.jpg" class="w-full h-40 object-cover rounded-xl">
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <img src="./media/homepic2.jpg" class="w-full h-40 object-cover rounded-xl">
+                        <img src="./media/homepic4.jpg" class="w-full h-64 object-cover rounded-xl">
+                    </div>
+                </div>
+                <div>
+                    <p class="text-amber-400 uppercase text-sm">Our World Through The Lens</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-3">Little Moments,<br>Beautiful Memories</h2>
+                    <p class="text-gray-400 mt-5">Every photograph tells a story, and every moment holds something special. At LensCraft, our team loves capturing the smiles, emotions, celebrations and little details that make life unforgettable.</p>
+                    <p class="text-gray-400 mt-4">From once-in-a-lifetime celebrations to everyday memories, we turn fleeting moments into photographs you can treasure forever.</p>
+                    <a href="portfolio.html" class="inline-block mt-8 border border-amber-500 text-amber-400 px-7 py-3 rounded-full hover:bg-amber-500 hover:text-black">Explore Our Moments</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="bg-black text-white px-5 py-10">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div>
+                    <h2 class="text-2xl font-bold flex items-center gap-2"><img src="./media/logo.png"
+                            class="w-9 h-9 object-contain" alt="LensCraft Logo">LensCraft</h2>
+                    <p class="mt-4 text-gray-400">Capturing beautiful moments and turning them into timeless memories.
+                        We specialize in wedding, portrait, travel and event photography.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="index.html" class="hover:text-amber-500">Home</a></li>
+                        <li><a href="about.html" class="hover:text-amber-500">About</a></li>
+                        <li><a href="portfolio.html" class="hover:text-amber-500">Portfolio</a></li>
+                        <li><a href="services.html" class="hover:text-amber-500">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-amber-500">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Follow Us On</h3>
+                    <ul class="flex items-center gap-5 text-xl text-gray-400">
+                        <li><a href="https://www.facebook.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://in.pinterest.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a href="https://www.instagram.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-400 mb-3">lenscraft@gmail.com</p>
+                    <p class="text-gray-400">+91 98765 43210</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Sign Up For The Newsletter</h3>
+                    <form class="flex flex-wrap gap-2">
+                        <input type="email" placeholder="Enter your email" class="w-full p-3 rounded bg-white text-black
+                        border border-gray-300 outline-none">
+                        <button type="submit" class="bg-amber-500 text-black px-6 py-3
+                        rounded hover:bg-amber-400">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="border-gray-700 mt-10 mb-5">
+            <p class="text-center text-gray-400 text-sm">© 2026 LensCraft Photography. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

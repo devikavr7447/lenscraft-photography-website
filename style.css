@@ -1,0 +1,15 @@
+ * {
+     font-family: "Merriweather", serif;
+ }
+
+ #menu-toggle:checked~header nav label #menuIcon {
+     display: none;
+ }
+
+ #menu-toggle:checked~header nav label #closeIcon {
+     display: inline;
+ }
+
+ html{
+    scroll-behavior: smooth;
+ }

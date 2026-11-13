@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
+    <title>LensCraft</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--tailwind CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--fontawesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-neutral-950">
+
+    <!--navigation bar section-->
+    <header class="bg-neutral-950">
+        <nav class="relative flex items-center justify-between px-8 py-5">
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+            <a href="index.html" class="flex items-center gap-3 text-3xl"><img src="./media/logo.png" height="50"
+                    width="50" alt="LensCraft Logo"><span class="text-white">LensCraft</span></a>
+            <label for="menu-toggle" class="ml-auto cursor-pointer text-2xl text-white lg:hidden peer-checked:hidden"><i
+                    class="fa-solid fa-bars"></i></label>
+            <label for="menu-toggle" class="hidden cursor-pointer text-2xl text-white lg:hidden peer-checked:block"><i
+                    class="fa-solid fa-xmark"></i></label>
+            <div id="navLinks"
+                class="hidden peer-checked:block absolute left-0 top-full z-50 w-full bg-neutral-950 py-5 text-center uppercase lg:static lg:block lg:w-auto lg:bg-transparent lg:py-0 ">
+                <a class="block gap-5 py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="index.html">Home</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="about.html">About</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="portfolio.html">Portfolio</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="services.html">Services</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0"
+                    href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--contact intro section-->
+    <section class="relative h-64 sm:h-80 flex items-center justify-center text-center">
+        <img src="./media/contact.jpg" alt="Photography Background"
+            class="absolute top-0 left-0 w-full h-full object-cover">
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-65"></div>
+        <div class="relative px-4">
+            <h1 class="text-4xl sm:text-5xl font-bold text-white">Contact Us</h1>
+            <p class="mt-3 text-gray-300">Let's talk about your next photoshoot</p>
+        </div>
+    </section>
+
+    <!--contact info section-->
+    <section>
+        <div class="max-w-4xl mx-auto px-5 py-10 space-y-6">
+            <div class="text-center mb-8">
+                <h2 class="text-amber-400 text-sm font-semibold uppercase mb-3">Contact Info</h2>
+                <p class="text-neutral-400 text-sm">Have a question or want to work together? Feel free to reach out.
+                    I'd love to hear from you.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="rounded-xl bg-neutral-900 border border-white/10 p-5">
+                    <p class="text-amber-400 text-sm mb-2"><i class="fa-solid fa-location-dot"></i> Location</p>
+                    <p class="text-neutral-300 text-sm">LensCraft Studio, Kochi, Kerala</p>
+                </div>
+                <div class="rounded-xl bg-neutral-900 border border-white/10 p-5">
+                    <p class="text-amber-400 text-sm mb-2"><i class="fa-solid fa-phone"></i> Phone</p>
+                    <p class="text-neutral-300 text-sm">+91 98765 43210</p>
+                </div>
+                <div class="rounded-xl bg-neutral-900 border border-white/10 p-5">
+                    <p class="text-amber-400 text-sm mb-2"><i class="fa-solid fa-envelope"></i> Email Us</p>
+                    <p class="text-neutral-300 text-sm">lenscraft@gmail.com</p>
+                </div>
+                <div class="rounded-xl bg-neutral-900 border border-white/10 p-5">
+                    <p class="text-amber-400 text-sm mb-2"><i class="fa-solid fa-clock"></i> Working Hours</p>
+                    <p class="text-neutral-300 text-sm">Mon-Sat, 9:00 AM - 7:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--message and map section-->
+    <section class="bg-neutral-950 py-16 px-5">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-8">
+
+            <form class="lg:col-span-3 rounded-2xl bg-neutral-900 border border-white/10 p-6 sm:p-10 space-y-5">
+                <h2 class="text-2xl font-bold text-white mb-4">Get In Touch With Us</h2>
+                <p class="text-neutral-400 text-sm mb-6">Have a question or want to work together?Feel free to reach
+                    out. I'd love to hear from you.</p>
+                <div class="grid gap-5 sm:grid-cols-2">
+                    <div>
+                        <label class="text-sm text-neutral-400" for="n">Full Name</label>
+                        <input id="n" required type="text" placeholder="Your name"
+                            class="mt-1 w-full rounded-lg border border-white/10 bg-neutral-950 px-4 py-3 text-white">
+                    </div>
+                    <div>
+                        <label class="text-sm text-neutral-400" for="e">Email</label>
+                        <input id="e" required type="email" placeholder="you@example.com"
+                            class="mt-1 w-full rounded-lg border border-white/10 bg-neutral-950 px-4 py-3 text-white">
+                    </div>
+                </div>
+                <div>
+                    <label class="text-sm text-neutral-400" for="p">Phone Number</label>
+                    <input id="p" required type="tel" placeholder="+91 00000 00000"
+                        class="mt-1 w-full rounded-lg border border-white/10 bg-neutral-950 px-4 py-3 text-white">
+                </div>
+                <div>
+                    <label class="text-sm text-neutral-400" for="m">Message</label>
+                    <textarea id="m" required rows="5" placeholder="Tell me about your shoot..."
+                        class="mt-1 w-full rounded-lg border border-white/10 bg-neutral-950 px-4 py-3 text-white"></textarea>
+                </div>
+                <button
+                    class="w-full rounded-full bg-amber-500 py-3 font-semibold text-neutral-950 hover:bg-amber-400 sm:w-auto sm:px-10">
+                    Send Message
+                </button>
+            </form>
+
+            <div class="lg:col-span-2 space-y-7">
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-3">Our Location</h2>
+                    <p class="text-neutral-400 text-sm mb-5">Visit us at our studio or get in touch to discuss your
+                        photography requirements. We would love to hear from you!</p>
+                    <iframe src="https://maps.google.com/maps?q=Kochi,Kerala&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="250" class="rounded-xl border border-white/10" style="border:0;"
+                        loading="lazy"></iframe>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">Social Media</h2>
+                    <p class="text-neutral-400 text-sm mb-4">Follow us on social media to see our latest photography
+                        work and updates.</p>
+                    <ul class="flex items-center gap-5 text-xl text-neutral-400">
+                        <li><a href="https://www.facebook.com/" class="hover:text-amber-500 transition"><i
+                                    class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://in.pinterest.com/" class="hover:text-amber-500 transition"><i
+                                    class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a href="https://www.instagram.com/" class="hover:text-amber-500 transition"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/" class="hover:text-amber-500 transition"><i
+                                    class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="bg-black text-white px-5 py-10">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div>
+                    <h2 class="text-2xl font-bold flex items-center gap-2"><img src="./media/logo.png"
+                            class="w-9 h-9 object-contain" alt="LensCraft Logo">LensCraft</h2>
+                    <p class="mt-4 text-gray-400">Capturing beautiful moments and turning them into timeless memories.
+                        We specialize in wedding, portrait, travel and event photography.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="index.html" class="hover:text-amber-500">Home</a></li>
+                        <li><a href="about.html" class="hover:text-amber-500">About</a></li>
+                        <li><a href="portfolio.html" class="hover:text-amber-500">Portfolio</a></li>
+                        <li><a href="services.html" class="hover:text-amber-500">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-amber-500">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Follow Us On</h3>
+                    <ul class="flex items-center gap-5 text-xl text-gray-400">
+                        <li><a href="https://www.facebook.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://in.pinterest.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a href="https://www.instagram.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-400 mb-3">lenscraft@gmail.com</p>
+                    <p class="text-gray-400">+91 98765 43210</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Sign Up For The Newsletter</h3>
+                    <form class="flex flex-wrap gap-2">
+                        <input type="email" placeholder="Enter your email" class="w-full p-3 rounded bg-white text-black
+                        border border-gray-300 outline-none">
+                        <button type="submit" class="bg-amber-500 text-black px-6 py-3
+                        rounded hover:bg-amber-400">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="border-gray-700 mt-10 mb-5">
+            <p class="text-center text-gray-400 text-sm">© 2026 LensCraft Photography. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

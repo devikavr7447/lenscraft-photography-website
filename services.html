@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
+    <title>LensCraft</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--tailwind CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--fontawesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-neutral-950">
+
+    <!--navigation bar section-->
+    <header class="bg-neutral-950">
+        <nav class="relative flex items-center justify-between px-8 py-5">
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+            <a href="index.html" class="flex items-center gap-3 text-3xl"><img src="./media/logo.png" height="50"
+                    width="50" alt="LensCraft Logo"><span class="text-white">LensCraft</span></a>
+            <label for="menu-toggle" class="ml-auto cursor-pointer text-2xl text-white lg:hidden peer-checked:hidden"><i
+                    class="fa-solid fa-bars"></i></label>
+            <label for="menu-toggle" class="hidden cursor-pointer text-2xl text-white lg:hidden peer-checked:block"><i
+                    class="fa-solid fa-xmark"></i></label>
+            <div id="navLinks"
+                class="hidden peer-checked:block absolute left-0 top-full z-50 w-full bg-neutral-950 py-5 text-center uppercase lg:static lg:block lg:w-auto lg:bg-transparent lg:py-0 ">
+                <a class="block gap-5 py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="index.html">Home</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="about.html">About</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="portfolio.html">Portfolio</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="services.html">Services</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0"
+                    href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--services intro section-->
+    <section class="relative h-64 sm:h-80 flex items-center justify-center text-center">
+        <img src="./media/services.jpg" alt="Photography Background"
+            class="absolute top-0 left-0 w-full h-full object-cover">
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-65"></div>
+        <div class="relative px-4">
+            <h1 class="text-4xl sm:text-5xl font-bold text-white">Services</h1>
+            <p class="mt-3 text-gray-300">Choose the perfect plan for your story</p>
+        </div>
+    </section>
+
+    <!-- services section -->
+    <section class="max-w-7xl mx-auto px-4 py-20">
+        <div class="text-center mb-12">
+            <p class="text-amber-400 uppercase text-sm">What We Offer</p>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mt-3">Photography Services</h2>
+            <p class="text-gray-400 mt-4">Capturing beautiful moments and turning them into memories.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+            <div
+                class="bg-neutral-900 border border-neutral-800 rounded-xl p-8 hover:border-amber-500 hover:bg-neutral-800 transition duration-300">
+                <img src="./media/wedicon.png" alt="Wedding Photography" class="w-10 h-10 object-contain">
+                <h3 class="text-xl font-semibold text-white mt-5">Wedding Photography</h3>
+                <p class="text-gray-400 text-sm mt-3">Capturing every special moment, beautiful ritual and unforgettable
+                    emotion of your wedding day.</p>
+            </div>
+            <div
+                class="bg-neutral-900 border border-neutral-800 rounded-xl p-8 hover:border-amber-500 hover:bg-neutral-800 transition duration-300">
+                <img src="./media/potricon.png" alt="icon" class="w-10 h-10 object-contain">
+                <h3 class="text-xl font-semibold text-white mt-5">Portrait & Fashion</h3>
+                <p class="text-gray-400 text-sm mt-3">Creative studio and outdoor photoshoots that highlightpersonality,
+                    style and confidence.</p>
+            </div>
+            <div
+                class="bg-neutral-900 border border-neutral-800 rounded-xl p-8 hover:border-amber-500 hover:bg-neutral-800 transition duration-300">
+                <img src="./media/proicon.png" alt="icon" class="w-10 h-10 object-contain">
+                <h3 class="text-xl font-semibold text-white mt-5">Product & Commercial</h3>
+                <p class="text-gray-400 text-sm mt-3">Professional product images and creative visuals for brands,
+                    businesses and advertisements.</p>
+            </div>
+            <div
+                class="bg-neutral-900 border border-neutral-800 rounded-xl p-8 hover:border-amber-500 hover:bg-neutral-800 transition duration-300">
+                <img src="./media/eveicon.png" alt="icon" class="w-10 h-10 object-contain">
+                <h3 class="text-xl font-semibold text-white mt-5">Event Photography</h3>
+                <p class="text-gray-400 text-sm mt-3">Preserving memorable moments from birthdays,celebrations and
+                    corporate events.</p>
+            </div>
+            <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-8 hover:border-amber-500 hover:bg-neutral-800
+                    transition duration-300">
+                <img src="./media/travicon.png" alt="icon" class="w-10 h-10 object-contain">
+                <h3 class="text-xl font-semibold text-white mt-5">Travel Photography</h3>
+                <p class="text-gray-400 text-sm mt-3 ">Exploring beautiful destinations and capturing landscapes,
+                    cultures and adventures.</p>
+            </div>
+            <div
+                class="bg-neutral-900 border border-neutral-800 rounded-xl p-8 hover:border-amber-500 hover:bg-neutral-800 transition duration-300">
+                <img src="./media/albicon.png" alt="icon" class="w-10 h-10 object-contain">
+                <h3 class="text-xl font-semibold text-white mt-5">Albums & Prints</h3>
+                <p class="text-gray-400 text-sm mt-3 ">Beautifully designed photo albums and premium prints to preserve
+                    your favourite memories.</p>
+            </div>
+            <div
+                class="bg-neutral-900 border border-neutral-800 rounded-xl p-8 hover:border-amber-500 hover:bg-neutral-800 transition duration-300">
+                <img src="./media/wildicon.png" alt="icon" class="w-10 h-10 object-contain">
+                <h3 class="text-xl font-semibold text-white mt-5">Wildlife Photography</h3>
+                <p class="text-gray-400 text-sm mt-3 ">Capturing stunning wildlife, birds and animals in theirnatural
+                    surroundings.</p>
+            </div>
+            <div
+                class="bg-neutral-900 border border-neutral-800 rounded-xl p-8 hover:border-amber-500 hover:bg-neutral-800 transition duration-300">
+                <img src="./media/landicon.png" alt="icon" class="w-10 h-10 object-contain">
+                <h3 class="text-xl font-semibold text-white mt-5">Landscape Photography</h3>
+                <p class="text-gray-400 text-sm mt-3">Capturing breathtaking natural scenery, mountains, oceans and
+                    beautiful outdoor landscapes.</p>
+            </div>
+            <div
+                class="bg-neutral-900 border border-neutral-800 rounded-xl p-8 hover:border-amber-500 hover:bg-neutral-800 transition duration-300">
+                <img src="./media/maternicon.png" alt="icon" class="w-10 h-10 object-contain">
+                <h3 class="text-xl font-semibold text-white mt-5">Newborn & Family Photography</h3>
+                <p class="text-gray-400 text-sm mt-3">
+                    Preserving precious family moments, newborn memoriesand beautiful milestones.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--specila offer section-->
+    <section class="max-w-8xl mx-auto px-16 py-16">
+        <div class="relative rounded-2xl overflow-hidden border border-amber-500/40">
+            <img src="./media/servicebanner.jpg" alt="Photography special offer" class="absolute inset-0 w-full h-full object-cover">
+             <div class="absolute top-0 left-0 w-full h-full bg-black opacity-65"></div>
+            <div class="relative text-center p-8 sm:p-12">
+                <p class="text-amber-400 uppercase text-sm font-semibold">Limited Time Offer</p>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-4">Make Your Moments<span class="text-amber-400">Memorable!</span></h2>
+                <p class="text-5xl sm:text-6xl font-bold text-amber-400 mt-6">20% OFF</p>
+                <p class="text-gray-200 text-lg mt-3">On Your First Photography Booking</p>
+                <p class="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto mt-5">Book your photography session today and enjoy a special discount. Whether it's a wedding, portrait or special event, let us capture your beautiful moments with creativity and passion.</p>
+                <a href="contact.html" class="inline-block mt-8 bg-amber-500 text-black font-semibold px-8 py-3 rounded-full hover:bg-amber-400 transition duration-300">Book Your Session</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="bg-black text-white px-5 py-10">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div>
+                    <h2 class="text-2xl font-bold flex items-center gap-2"><img src="./media/logo.png"
+                            class="w-9 h-9 object-contain" alt="LensCraft Logo">LensCraft</h2>
+                    <p class="mt-4 text-gray-400">Capturing beautiful moments and turning them into timeless memories.
+                        We specialize in wedding, portrait, travel and event photography.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="index.html" class="hover:text-amber-500">Home</a></li>
+                        <li><a href="about.html" class="hover:text-amber-500">About</a></li>
+                        <li><a href="portfolio.html" class="hover:text-amber-500">Portfolio</a></li>
+                        <li><a href="services.html" class="hover:text-amber-500">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-amber-500">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Follow Us On</h3>
+                    <ul class="flex items-center gap-5 text-xl text-gray-400">
+                        <li><a href="https://www.facebook.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://in.pinterest.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a href="https://www.instagram.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-400 mb-3">lenscraft@gmail.com</p>
+                    <p class="text-gray-400">+91 98765 43210</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Sign Up For The Newsletter</h3>
+                    <form class="flex flex-wrap gap-2">
+                        <input type="email" placeholder="Enter your email" class="w-full p-3 rounded bg-white text-black
+                        border border-gray-300 outline-none">
+                        <button type="submit" class="bg-amber-500 text-black px-6 py-3
+                        rounded hover:bg-amber-400">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="border-gray-700 mt-10 mb-5">
+            <p class="text-center text-gray-400 text-sm">© 2026 LensCraft Photography. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

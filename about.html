@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
+    <title>LensCraft</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--tailwind CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--fontawesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-neutral-950">
+
+    <!--navigation bar section-->
+    <header class="bg-neutral-950">
+        <nav class="relative flex items-center justify-between px-8 py-5">
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+            <a href="index.html" class="flex items-center gap-3 text-3xl"><img src="./media/logo.png" height="50"
+                    width="50" alt="LensCraft Logo"><span class="text-white">LensCraft</span></a>
+            <label for="menu-toggle" class="ml-auto cursor-pointer text-2xl text-white lg:hidden peer-checked:hidden"><i
+                    class="fa-solid fa-bars"></i></label>
+            <label for="menu-toggle" class="hidden cursor-pointer text-2xl text-white lg:hidden peer-checked:block"><i
+                    class="fa-solid fa-xmark"></i></label>
+            <div id="navLinks"
+                class="hidden peer-checked:block absolute left-0 top-full z-50 w-full bg-neutral-950 py-5 text-center uppercase lg:static lg:block lg:w-auto lg:bg-transparent lg:py-0 ">
+                <a class="block gap-5 py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="index.html">Home</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="about.html">About</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="portfolio.html">Portfolio</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0 lg:mr-8"
+                    href="services.html">Services</a>
+                <a class="block py-3 text-white hover:text-amber-400 lg:inline-block lg:py-0"
+                    href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--about us intro section-->
+    <section class="relative h-64 sm:h-80 flex items-center justify-center text-center">
+        <img src="./media/aboutus.jpg" alt="Photography Background"
+            class="absolute top-0 left-0 w-full h-full object-cover">
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-65"></div>
+        <div class="relative px-4">
+            <h1 class="text-4xl sm:text-5xl font-bold text-white">About Us</h1>
+            <p class="mt-3 text-gray-300">The story behind the lens</p>
+        </div>
+    </section>
+
+    <!--story section-->
+    <section class="max-w-7xl mx-auto px-5 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+                <img src="./media/story.jpg" alt="LensCraft Photography Team"
+                    class="w-full h-96 md:h-[500px] object-cover rounded-2xl">
+            </div>
+            <div>
+                <p class="text-amber-400 uppercase text-sm">A Photographic Story</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-3">Behind The Lens, Beyond The Moments</h2>
+                <p class="text-neutral-400 mt-5 ">LensCraft Photography began with a shared passion for capturing
+                    beautiful moments and turning them into timeless memories. What started as a love for photography
+                    has grown into a creative team dedicated to telling stories through every frame.</p>
+                <p class="text-neutral-400 mt-4 ">Our team specializes in weddings, portraits, events and lifestyle
+                    photography. We believe every picture has a story to tell, and our goal is to capture genuine
+                    emotions, beautiful details and unforgettable experiences with creativity and care.</p>
+                <p class="text-neutral-400 mt-4 ">From the first click to the final edit, we work together to deliver
+                    photographs that you can cherish for a lifetime.</p>
+                <ul class="mt-6 grid grid-cols-2 gap-4 text-sm text-neutral-300">
+                    <li><span class="text-amber-400 mr-2">✓</span>Creative Photography Team</li>
+                    <li><span class="text-amber-400 mr-2">✓</span>Professional Editing</li>
+                    <li><span class="text-amber-400 mr-2">✓</span>Premium Equipment</li>
+                    <li><span class="text-amber-400 mr-2">✓</span>Memorable Storytelling</li>
+                </ul>
+                <a href="contact.html"
+                    class="inline-block mt-8 bg-amber-500 text-neutral-950 px-7 py-3 rounded-full font-semibold hover:bg-amber-400">Work
+                    With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!--values section-->
+    <section class="bg-neutral-950 py-12 px-5">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex items-center gap-4">
+                    <div class="bg-neutral-800 border border-white/10 p-4 rounded-lg">
+                        <span class="text-amber-400 text-2xl"><img src="./media/mission.png" alt="icon"
+                                class="w-15 h-10 object-contain"></span>
+                    </div>
+                    <div>
+                        <h3 class="text-amber-400 font-bold text-sm uppercase">Our Mission</h3>
+                        <p class="text-neutral-400 text-xs mt-2">To capture genuine emotions and turn beautiful moments
+                            into timeless memories.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="bg-neutral-800 border border-white/10 p-4 rounded-lg">
+                        <span class="text-amber-400 text-2xl"><img src="./media/vision.png" alt="icon"
+                                class="w-15 h-10 object-contain"></span>
+                    </div>
+                    <div>
+                        <h3 class="text-amber-400 font-bold text-sm uppercase">Our Vision</h3>
+                        <p class="text-neutral-400 text-xs mt-2 ">To become a trusted photography brand known for
+                            creativity, quality and storytelling.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="bg-neutral-800 border border-white/10 p-4 rounded-lg">
+                        <span class="text-amber-400 text-2xl"><img src="./media/value.png" alt="icon"
+                                class="w-15 h-10 object-contain"></span>
+                    </div>
+                    <div>
+                        <h3 class="text-amber-400 font-bold text-sm uppercase">Our Values</h3>
+                        <p class="text-neutral-400 text-xs mt-2">Creativity, teamwork and dedication in every photograph
+                            and every story we capture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- photographer intro section-->
+    <section class="bg-neutral-950 py-16 px-5">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+                <p class="text-amber-400 uppercase text-sm">Meet Our Photographer</p>
+                <h2 class="text-3xl font-bold text-white mt-3">The Creative Eye Behind Every Frame</h2>
+                <p class="text-neutral-400 mt-5">At LensCraft Photography, our lead photographer brings creativity,
+                    passion and a unique perspective to every photoshoot. With an eye for detail and a love for
+                    storytelling, every moment is captured with care and imagination.</p>
+                <p class="text-neutral-400 mt-4">From beautiful portraits to unforgettable weddings, the focus is always
+                    on capturing natural emotions and creating photographs that tell meaningful stories.</p>
+                <p class="text-amber-400 font-semibold mt-5">"Every picture has a story. We make it unforgettable."</p>
+            </div>
+            <div>
+                <img src="./media/photographer.jpg" alt="Our Photographer"
+                    class="w-full h-100 object-cover rounded-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- team intro section -->
+    <section class="bg-neutral-950 py-16 px-5">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-amber-400 uppercase text-sm">The People Behind LensCraft</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 mb-5">Meet Our Team</h2>
+            <p class="text-neutral-400 max-w-3xl mx-auto mb-8">Great photographs are never just the work of one person.
+                They are created through teamwork, creativity and passion. Our talented team of photographers, editors
+                and creative professionals work together to capture every special moment.</p>
+            <img src="./media/team.jpg" alt="LensCraft Photography Team"
+                class="w-full h-[500px] md:h-[500px] object-cover rounded-2xl">
+            <div class="max-w-3xl mx-auto mt-8">
+                <h3 class="text-xl font-semibold text-white mb-4">Together, We Create Memories</h3>
+                <p class="text-neutral-400">From planning every shoot to capturing the perfect moment and bringing
+                    images to life through editing, each team member plays an important role. We believe in
+                    collaboration, fresh ideas and attention to detail to deliver photographs that last a lifetime.</p>
+                <a href="contact.html"
+                    class="inline-block mt-7 bg-amber-500 text-neutral-950 px-7 py-3 rounded-full font-semibold hover:bg-amber-400">Work
+                    With Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="bg-black text-white px-5 py-10">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div>
+                    <h2 class="text-2xl font-bold flex items-center gap-2"><img src="./media/logo.png"
+                            class="w-9 h-9 object-contain" alt="LensCraft Logo">LensCraft</h2>
+                    <p class="mt-4 text-gray-400">Capturing beautiful moments and turning them into timeless memories.
+                        We specialize in wedding, portrait, travel and event photography.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="index.html" class="hover:text-amber-500">Home</a></li>
+                        <li><a href="about.html" class="hover:text-amber-500">About</a></li>
+                        <li><a href="portfolio.html" class="hover:text-amber-500">Portfolio</a></li>
+                        <li><a href="services.html" class="hover:text-amber-500">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-amber-500">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Follow Us On</h3>
+                    <ul class="flex items-center gap-5 text-xl text-gray-400">
+                        <li><a href="https://www.facebook.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://in.pinterest.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a href="https://www.instagram.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/" class="hover:text-amber-500"><i
+                                    class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <p class="text-gray-400 mb-3">lenscraft@gmail.com</p>
+                    <p class="text-gray-400">+91 98765 43210</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Sign Up For The Newsletter</h3>
+                    <form class="flex flex-wrap gap-2">
+                        <input type="email" placeholder="Enter your email" class="w-full p-3 rounded bg-white text-black
+                        border border-gray-300 outline-none">
+                        <button type="submit" class="bg-amber-500 text-black px-6 py-3
+                        rounded hover:bg-amber-400">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="border-gray-700 mt-10 mb-5">
+            <p class="text-center text-gray-400 text-sm">© 2026 LensCraft Photography. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
